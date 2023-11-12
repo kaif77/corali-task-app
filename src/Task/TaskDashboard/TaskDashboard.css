@@ -1,0 +1,28 @@
+.btn{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    border-bottom: 4px solid grey;
+    padding: 3.5px;
+}
+
+.task-sub-title{
+    margin: 5px 0 5px 0;
+    border-bottom: 4px solid grey;
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.table-view{
+    margin: 15px 0;
+}
+
+.task-container{
+    padding: 5px;
+}
+
+.ant-select-clear {
+    margin-top: 5px !important;
+    margin-right: 50px;
+    font-size: 15px !important;
+}
