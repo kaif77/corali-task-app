@@ -31,7 +31,7 @@ const TaskCreate = ({ onClose, open, editData, fetchData }) => {
     );
     const task = {
       name: values.name,
-      status: values.status,
+      status: editData ? values.status.value : values.status,
       assignee: values.assignee,
       dueDate:
         selectedDate.getFullYear() +
