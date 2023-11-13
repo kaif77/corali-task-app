@@ -90,7 +90,7 @@ const TaskDashboard = () => {
         if (response.status === 200) {
           AntNotification(
             "success",
-            "Donor Deleted",
+            "Task Deleted",
             response.data.success.message
           );
           fetchData();
@@ -101,7 +101,7 @@ const TaskDashboard = () => {
         if (error.response.status === 404) {
           AntNotification(
             "error",
-            "Donor Not Found",
+            "Task Not Found",
             error.response.data.error.message
           );
         } else {
