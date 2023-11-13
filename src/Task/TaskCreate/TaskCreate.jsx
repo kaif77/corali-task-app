@@ -31,7 +31,7 @@ const TaskCreate = ({ onClose, open, editData, fetchData }) => {
     );
     const task = {
       name: values.name,
-      status: values.status,
+      status: editData ? values.status.value : values.status,
       assignee: values.assignee,
       dueDate:
         selectedDate.getFullYear() +
@@ -139,7 +139,6 @@ const TaskCreate = ({ onClose, open, editData, fetchData }) => {
         }}
         extra={
           <Space>
-            {/* <Button onClick={onReset} type="primary" danger>Discard</Button> */}
             <Button
               onClick={onSubmit}
               type="primary"
