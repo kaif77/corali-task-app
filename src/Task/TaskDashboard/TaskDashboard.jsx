@@ -134,8 +134,8 @@ const TaskDashboard = () => {
           color = "green";
         }
         if (status === "closed") {
-            color = "red";
-          }
+          color = "red";
+        }
         return (
           <Tag color={color} key={status}>
             {status.toUpperCase()}
@@ -198,6 +198,7 @@ const TaskDashboard = () => {
 
   useEffect(() => {
     setTempData(data);
+    //eslint-disable-next-line
   }, []);
 
   const resetData = () => {

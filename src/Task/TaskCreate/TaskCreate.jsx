@@ -120,6 +120,7 @@ const TaskCreate = ({ onClose, open, editData, fetchData }) => {
         description: editData.description,
       });
     }
+    // eslint-disable-next-line
   }, [editData]);
 
   const onSubmit = () => {
