@@ -1,4 +1,4 @@
-Corali Task App
+## Corali Task App
 
 A simple and intuitive task management application built with React, designed to help users organize their daily tasks efficiently.
 Project Description
