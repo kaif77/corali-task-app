@@ -121,6 +121,7 @@ const TaskCreate = ({ onClose, open, editData, fetchData }) => {
         description: editData.description,
       });
     }
+    // eslint-disable-next-line
   }, [editData]);
 
   const onSubmit = () => {
@@ -139,7 +140,6 @@ const TaskCreate = ({ onClose, open, editData, fetchData }) => {
         }}
         extra={
           <Space>
-            {/* <Button onClick={onReset} type="primary" danger>Discard</Button> */}
             <Button
               onClick={onSubmit}
               type="primary"
